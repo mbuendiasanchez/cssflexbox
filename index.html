@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>index</title>
-	<style media="screen"
+	<style>
 		   *{
 		   box-sizing:border-box;
 		   }
@@ -13,6 +13,7 @@
 		}
 .flex-container {
   display: flex;
+	flex-wrap: wrap;
   background-color: #9861C8;
 }
 
@@ -22,6 +23,33 @@
   padding: 20px;
   font-size: 30px;
 }
+	.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+.section_R {
+    flex-grow: 2;
+}
+.flex-responsive {
+    flex: 30%;
+}	
+	@media (max-width: 799px) {
+#container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: bisque;
+}
+.flex-responsive {
+    flex: 100%;
+}
+}	
 </style>
 </head>
 
