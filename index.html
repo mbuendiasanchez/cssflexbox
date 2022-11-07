@@ -50,14 +50,34 @@
     flex: 100%;
 }
 }	
-</style>
+</style><link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+	   $( function() {
+    $( "#accordion" ).accordion();
+		    } );
+	  $( function() {
+		  $("#tabs" ).tabs():
+	  }
+	
 </head>
-
+	</script>
 <body>
 	<div class="flex-container">
   <div class="makeMeStack" style="flex-grow: 1">1</div>
    <div class="makeMeStack" style="flex-grow: 1">2</div>
    <div class="makeMeStack" style="flex-grow: 1">3</div>  
+		<div class="flex-container">
+			<p> this sentence makes a new flexbox.</p>
+		<div id="tabs">
+		<ul>
+		<li><a href="#tabs-1">number one</a></li>
+		<li><a href="#tabs-2">number two</a></li>
+		<li><a href="#tabs-3">number three</a></li>
+			</ul>
+		
 </div>
 
 </body>
