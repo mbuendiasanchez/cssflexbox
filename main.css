@@ -35,7 +35,7 @@ footer{
 }
 
   /* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (max-width: 1020px) {
+@media (max-width: 799px) {
   .flex-container {
     flex-direction: column;
 	}
